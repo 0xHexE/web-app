@@ -1,0 +1,28 @@
+{
+  "root": "apps/document-repository-webapp-e2e",
+  "sourceRoot": "apps/document-repository-webapp-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/document-repository-webapp-e2e/cypress.json",
+        "devServerTarget": "document-repository-webapp:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "document-repository-webapp:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/document-repository-webapp-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["document-repository-webapp"]
+}

@@ -1,0 +1,75 @@
+{
+  "root": "apps/document-repository-webapp",
+  "sourceRoot": "apps/document-repository-webapp/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/document-repository-webapp",
+        "index": "apps/document-repository-webapp/src/index.html",
+        "baseHref": "/",
+        "main": "apps/document-repository-webapp/src/main.tsx",
+        "polyfills": "apps/document-repository-webapp/src/polyfills.ts",
+        "tsConfig": "apps/document-repository-webapp/tsconfig.app.json",
+        "assets": [
+          "apps/document-repository-webapp/src/favicon.ico",
+          "apps/document-repository-webapp/src/assets"
+        ],
+        "styles": [],
+        "scripts": [],
+        "webpackConfig": "@nrwl/react/plugins/webpack"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/document-repository-webapp/src/environments/environment.ts",
+              "with": "apps/document-repository-webapp/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "document-repository-webapp:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "document-repository-webapp:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/document-repository-webapp/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/document-repository-webapp"],
+      "options": {
+        "jestConfig": "apps/document-repository-webapp/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

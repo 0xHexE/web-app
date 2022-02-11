@@ -1,4 +1,8 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "common-ui": "libs/common-ui",
+    "document-repository-webapp": "apps/document-repository-webapp",
+    "document-repository-webapp-e2e": "apps/document-repository-webapp-e2e"
+  }
 }
