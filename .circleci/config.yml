@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   nx: nrwl/nx@1.0.0
+  sonarcloud: sonarsource/sonarcloud@1.0.1
 
 jobs:
   main:
@@ -14,6 +15,7 @@ jobs:
       - nx/set-shas
       - run: npx nx affected --base=$NX_BASE --target=lint --parallel=3
       - run: npx nx affected --base=$NX_BASE --target=test --parallel=2
+      - sonarcloud/scan
 
   pr:
     docker:
@@ -25,6 +27,7 @@ jobs:
       - nx/set-shas
       - run: npx nx affected --base=$NX_BASE --target=build --parallel=3
       - run: npx nx affected --base=$NX_BASE --target=lint --parallel=2
+      - sonarcloud/scan
 
 workflows:
   build:
@@ -33,6 +36,7 @@ workflows:
           filters:
             branches:
               only: main
+          context: SonarCloud
 
       - pr:
           filters:
