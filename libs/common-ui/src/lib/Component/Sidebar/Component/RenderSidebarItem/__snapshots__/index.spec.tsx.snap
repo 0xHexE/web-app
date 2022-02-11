@@ -1,0 +1,388 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RenderSidebarItem should render 1`] = `
+<body>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <svg
+        aria-hidden="true"
+        fill="currentColor"
+        focusable="false"
+        height="16"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+        />
+      </svg>
+      <span
+        class=""
+      />
+      jas
+    </div>
+  </div>
+</body>
+`;
+
+exports[`RenderSidebarItem should render 2`] = `
+<body>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <svg
+        aria-hidden="true"
+        fill="currentColor"
+        focusable="false"
+        height="16"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+        />
+      </svg>
+      <span
+        class=""
+      />
+      jas
+    </div>
+  </div>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <svg
+        aria-hidden="true"
+        fill="currentColor"
+        focusable="false"
+        height="16"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+        />
+      </svg>
+      <span
+        class=""
+      />
+      jas
+    </div>
+  </div>
+</body>
+`;
+
+exports[`RenderSidebarItem should render 3`] = `
+<body>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <svg
+        aria-hidden="true"
+        fill="currentColor"
+        focusable="false"
+        height="16"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+        />
+      </svg>
+      <span
+        class=""
+      />
+      jas
+    </div>
+  </div>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <svg
+        aria-hidden="true"
+        fill="currentColor"
+        focusable="false"
+        height="16"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+        />
+      </svg>
+      <span
+        class=""
+      />
+      jas
+    </div>
+  </div>
+  <div>
+    <li
+      class=""
+    >
+      <div
+        aria-expanded="false"
+        class=""
+        role="button"
+        tabindex="0"
+      >
+        jas
+        <svg
+          class=""
+          size="16"
+          title="Expand"
+          viewBox="0 0 24 24"
+        >
+          <g
+            class=""
+          >
+            <path
+              clip-rule="evenodd"
+              d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+              fill-rule="evenodd"
+            />
+          </g>
+          <path
+            clip-rule="evenodd"
+            d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class=""
+        />
+      </div>
+    </li>
+  </div>
+</body>
+`;
+
+exports[`RenderSidebarItem should render 4`] = `
+<body>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <svg
+        aria-hidden="true"
+        fill="currentColor"
+        focusable="false"
+        height="16"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+        />
+      </svg>
+      <span
+        class=""
+      />
+      jas
+    </div>
+  </div>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <svg
+        aria-hidden="true"
+        fill="currentColor"
+        focusable="false"
+        height="16"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+        />
+      </svg>
+      <span
+        class=""
+      />
+      jas
+    </div>
+  </div>
+  <div>
+    <li
+      class=""
+    >
+      <div
+        aria-expanded="false"
+        class=""
+        role="button"
+        tabindex="0"
+      >
+        jas
+        <svg
+          class=""
+          size="16"
+          title="Expand"
+          viewBox="0 0 24 24"
+        >
+          <g
+            class=""
+          >
+            <path
+              clip-rule="evenodd"
+              d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+              fill-rule="evenodd"
+            />
+          </g>
+          <path
+            clip-rule="evenodd"
+            d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class=""
+        />
+      </div>
+    </li>
+  </div>
+  <div>
+    <span
+      class=""
+    />
+  </div>
+</body>
+`;
+
+exports[`RenderSidebarItem should render 5`] = `
+<body>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <svg
+        aria-hidden="true"
+        fill="currentColor"
+        focusable="false"
+        height="16"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+        />
+      </svg>
+      <span
+        class=""
+      />
+      jas
+    </div>
+  </div>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <svg
+        aria-hidden="true"
+        fill="currentColor"
+        focusable="false"
+        height="16"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+        />
+      </svg>
+      <span
+        class=""
+      />
+      jas
+    </div>
+  </div>
+  <div>
+    <li
+      class=""
+    >
+      <div
+        aria-expanded="false"
+        class=""
+        role="button"
+        tabindex="0"
+      >
+        jas
+        <svg
+          class=""
+          size="16"
+          title="Expand"
+          viewBox="0 0 24 24"
+        >
+          <g
+            class=""
+          >
+            <path
+              clip-rule="evenodd"
+              d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+              fill-rule="evenodd"
+            />
+          </g>
+          <path
+            clip-rule="evenodd"
+            d="M6 12C6 11.4477 6.44772 11 7 11H17C17.5523 11 18 11.4477 18 12C18 12.5523 17.5523 13 17 13H7C6.44772 13 6 12.5523 6 12Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class=""
+      >
+        <div
+          class=""
+        />
+      </div>
+    </li>
+  </div>
+  <div>
+    <span
+      class=""
+    />
+  </div>
+  <div />
+</body>
+`;
