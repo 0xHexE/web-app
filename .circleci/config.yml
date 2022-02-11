@@ -42,3 +42,4 @@ workflows:
           filters:
             branches:
               ignore: main
+          context: SonarCloud
