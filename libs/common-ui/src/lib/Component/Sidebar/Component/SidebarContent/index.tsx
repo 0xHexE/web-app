@@ -10,7 +10,7 @@ export function SidebarContent() {
       accordion
       overrides={{ Root: { style: { flexGrow: 1 } } }}
       // TODO: THIS NEEDS TO CHANGE TO ACTIVE ONE
-      initialState={{ expanded: [items?.[0].key] }}
+      initialState={{ expanded: [items?.[0]?.key] }}
     >
       {items.map((item) => {
         return (

@@ -22,6 +22,6 @@ describe('App', () => {
       </BrowserRouter>
     );
 
-    expect(getByText(/Welcome document-repository-webapp/gi)).toBeTruthy();
+    expect(getByText(/Anthaathi Drive/gi)).toBeTruthy();
   });
 });

@@ -1,7 +1,14 @@
-import { DefaultLayout } from '@web-app/common-ui';
+import { BaseWebProvider, DefaultLayout } from '@web-app/common-ui';
+import { ToggleThemeButton } from '../../../../libs/common-ui/src/lib/BaseWeb/Component/ToggleButton';
 
 export function App() {
-  return <DefaultLayout>Hello world</DefaultLayout>;
+  return (
+    <BaseWebProvider>
+      <DefaultLayout>
+        <ToggleThemeButton />
+      </DefaultLayout>
+    </BaseWebProvider>
+  );
 }
 
 export default App;
