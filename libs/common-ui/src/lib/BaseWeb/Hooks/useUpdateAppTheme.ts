@@ -1,5 +1,5 @@
 import { useUpdateAtom } from 'jotai/utils';
-import { AppTheme, appThemeAtom } from '@web-app/common-ui';
+import { AppTheme, appThemeAtom } from '../Atom/appTheme';
 
 export function useUpdateAppTheme() {
   const updateAppTheme = useUpdateAtom(appThemeAtom);
