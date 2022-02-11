@@ -5,6 +5,9 @@ orbs:
 
 jobs:
   main:
+    docker:
+      - image: cimg/node:17.5.0
+
     steps:
       - checkout
       - run: yarn install
@@ -13,6 +16,9 @@ jobs:
       - run: npx nx affected --base=$NX_BASE --target=test --parallel=2
 
   pr:
+    docker:
+      - image: cimg/node:17.5.0
+
     steps:
       - checkout
       - run: yarn install
