@@ -1,4 +1,4 @@
-import { getAllByTestId, render } from '@testing-library/react';
+import { fireEvent, getAllByTestId, render } from '@testing-library/react';
 import { RenderMiniSidebarItem } from './index';
 import { Menu16 } from '@carbon/icons-react';
 
@@ -39,6 +39,6 @@ describe('RenderMiniSidebarItem', function () {
 
     expect(baseElement3).toMatchSnapshot();
 
-    getAllByTestId(container, 'render-mini-sidebar-item');
+    fireEvent.click(getAllByTestId(container, 'render-mini-sidebar-item')[0]);
   });
 });
