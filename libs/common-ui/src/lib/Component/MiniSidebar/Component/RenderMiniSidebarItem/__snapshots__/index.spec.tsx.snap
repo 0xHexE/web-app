@@ -12,6 +12,7 @@ exports[`RenderMiniSidebarItem should render mini sidebar item 1`] = `
         aria-haspopup="true"
         class=""
         data-baseweb="button"
+        data-testid="render-mini-sidebar-item"
         id="1__anchor"
       >
         <svg
@@ -46,6 +47,7 @@ exports[`RenderMiniSidebarItem should render mini sidebar item 2`] = `
         aria-haspopup="true"
         class=""
         data-baseweb="button"
+        data-testid="render-mini-sidebar-item"
         id="1__anchor"
       >
         <svg
@@ -75,6 +77,7 @@ exports[`RenderMiniSidebarItem should render mini sidebar item 2`] = `
         aria-haspopup="true"
         class=""
         data-baseweb="button"
+        data-testid="render-mini-sidebar-item"
         id="2__anchor"
       >
         <svg
@@ -109,6 +112,7 @@ exports[`RenderMiniSidebarItem should render mini sidebar item 3`] = `
         aria-haspopup="true"
         class=""
         data-baseweb="button"
+        data-testid="render-mini-sidebar-item"
         id="1__anchor"
       >
         <svg
@@ -138,6 +142,7 @@ exports[`RenderMiniSidebarItem should render mini sidebar item 3`] = `
         aria-haspopup="true"
         class=""
         data-baseweb="button"
+        data-testid="render-mini-sidebar-item"
         id="2__anchor"
       >
         <svg
@@ -161,6 +166,106 @@ exports[`RenderMiniSidebarItem should render mini sidebar item 3`] = `
     <span
       class=""
     />
+  </div>
+</body>
+`;
+
+exports[`RenderMiniSidebarItem should render mini sidebar item 4`] = `
+<body>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <button
+        aria-expanded="false"
+        aria-haspopup="true"
+        class=""
+        data-baseweb="button"
+        data-testid="render-mini-sidebar-item"
+        id="1__anchor"
+      >
+        <svg
+          aria-hidden="true"
+          fill="currentColor"
+          focusable="false"
+          height="16"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <button
+        aria-expanded="false"
+        aria-haspopup="true"
+        class=""
+        data-baseweb="button"
+        data-testid="render-mini-sidebar-item"
+        id="2__anchor"
+      >
+        <svg
+          aria-hidden="true"
+          fill="currentColor"
+          focusable="false"
+          height="16"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div>
+    <span
+      class=""
+    />
+  </div>
+  <div>
+    <div
+      class=""
+      data-baseweb="block"
+    >
+      <button
+        aria-expanded="false"
+        aria-haspopup="true"
+        class=""
+        data-baseweb="button"
+        data-testid="render-mini-sidebar-item"
+        id="3__anchor"
+      >
+        <svg
+          aria-hidden="true"
+          fill="currentColor"
+          focusable="false"
+          height="16"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 16 16"
+          width="16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2 12H14V13H2zM2 9H14V10H2zM2 6H14V7H2zM2 3H14V4H2z"
+          />
+        </svg>
+      </button>
+    </div>
   </div>
 </body>
 `;

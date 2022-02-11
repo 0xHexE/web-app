@@ -34,6 +34,7 @@ export function RenderMiniSidebarItem({
             <Button
               size={SIZE.compact}
               kind={KIND.tertiary}
+              data-testid="render-mini-sidebar-item"
               onClick={(event) => {
                 if (item.children) {
                   const clientRect = (

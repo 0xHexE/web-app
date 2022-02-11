@@ -20,7 +20,8 @@ describe('RenderMiniSidebarItem', function () {
     );
 
     expect(baseElement).toMatchSnapshot();
-    const { baseElement: baseElement3, container } = render(
+
+    const { baseElement: baseElement3 } = render(
       <RenderMiniSidebarItem
         item={{ kind: 'spacer', key: 'test' }}
         isLastItem={true}
@@ -29,6 +30,15 @@ describe('RenderMiniSidebarItem', function () {
 
     expect(baseElement3).toMatchSnapshot();
 
-    getAllByTestId(container, '');
+    const { container } = render(
+      <RenderMiniSidebarItem
+        item={{ kind: 'action', key: 'test2', icon: <Menu16 />, title: 'test' }}
+        isLastItem={true}
+      />
+    );
+
+    expect(baseElement3).toMatchSnapshot();
+
+    getAllByTestId(container, 'render-mini-sidebar-item');
   });
 });
