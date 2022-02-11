@@ -13,8 +13,9 @@ jobs:
       - checkout
       - run: yarn install
       - nx/set-shas
-      - run: npx nx affected --base=$NX_BASE --target=lint --parallel=3
-      - run: npx nx affected --base=$NX_BASE --target=test --coverage --coverageReporters=lcov --parallel=2
+      - run: npx nx affected --base=$NX_BASE --target=build --parallel=3
+      - run: npx nx affected --base=$NX_BASE --target=test --parallel=3 --coverage --coverageReporters=lcov
+      - run: npx nx affected --base=$NX_BASE --target=lint --coverage --parallel=2
       - run: node ./tools/coverageMerger.js
       - sonarcloud/scan
 
@@ -27,7 +28,8 @@ jobs:
       - run: yarn install
       - nx/set-shas
       - run: npx nx affected --base=$NX_BASE --target=build --parallel=3
-      - run: npx nx affected --base=$NX_BASE --target=lint --coverage --coverageReporters=lcov --parallel=2
+      - run: npx nx affected --base=$NX_BASE --target=test --parallel=3 --coverage --coverageReporters=lcov
+      - run: npx nx affected --base=$NX_BASE --target=lint --coverage --parallel=2
       - run: node ./tools/coverageMerger.js
       - sonarcloud/scan
 

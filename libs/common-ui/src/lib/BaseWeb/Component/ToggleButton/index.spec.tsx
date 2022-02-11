@@ -1,17 +1,12 @@
-import {
-  fireEvent,
-  getByText,
-  getByTestId,
-  render,
-} from '@testing-library/react';
+import { fireEvent, getByTestId, render } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import App from '../../../../../../../apps/document-repository-webapp/src/app/app';
+import { ToggleThemeButton } from './index';
 
 describe('BaseWeb', function () {
   it('should toggle theme', function () {
     const { container } = render(
       <BrowserRouter>
-        <App />
+        <ToggleThemeButton />
       </BrowserRouter>
     );
 

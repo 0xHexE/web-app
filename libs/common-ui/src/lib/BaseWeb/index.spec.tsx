@@ -1,12 +1,14 @@
 import { render } from '@testing-library/react';
-import App from '../../../../../apps/document-repository-webapp/src/app/app';
-import { BaseWebProvider } from '@web-app/common-ui';
+import { BaseWebProvider } from './index';
+import { ToggleThemeButton } from './Component/ToggleButton';
 
 describe('BaseWeb', () => {
   it('should hook work', () => {
     const { baseElement } = render(
       <BaseWebProvider>
-        <App />
+        <div>
+          <ToggleThemeButton />
+        </div>
       </BaseWebProvider>
     );
 

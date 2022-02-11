@@ -1,7 +1,8 @@
 import { Button } from 'baseui/button';
 import { Asleep20, AsleepFilled20 } from '@carbon/icons-react';
-import { AppTheme, appThemeAtom, useUpdateAppTheme } from '@web-app/common-ui';
 import { useAtomValue } from 'jotai/utils';
+import { useUpdateAppTheme } from '../../Hooks/useUpdateAppTheme';
+import { AppTheme, appThemeAtom } from '../../Atom/appTheme';
 
 export function ToggleThemeButton() {
   const toggleTheme = useUpdateAppTheme();
