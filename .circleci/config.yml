@@ -24,10 +24,22 @@ jobs:
           paths:
             - .yarn/cache
             - .yarn/unplugged
+      # For restoring old cache of coverage
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          paths:
+            - coverage
+          keys:
+            - coverage-cache-{{ .Branch }}
       - nx/set-shas
       - run: npx nx affected --base=$NX_BASE --target=build --parallel=3
       - run: npx nx affected --base=$NX_BASE --target=test --parallel=3 --coverage --coverageReporters=lcov
       - run: npx nx affected --base=$NX_BASE --target=lint --parallel=2
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: coverage-cache-{{ .Branch }}
+          paths:
+            - coverage
       - run: node ./tools/coverageMerger.js
       - sonarcloud/scan
 
@@ -44,6 +56,13 @@ jobs:
       - run:
           name: Install Dependencies
           command: yarn install --immutable
+      # For restoring old cache of coverage
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          paths:
+            - coverage
+          keys:
+            - coverage-cache-{{ .Branch }}
       - save_cache:
           name: Save Yarn Package Cache
           key: yarn-packages-{{ checksum "yarn.lock" }}
@@ -54,6 +73,11 @@ jobs:
       - run: npx nx affected --base=$NX_BASE --target=build --parallel=3
       - run: npx nx affected --base=$NX_BASE --target=test --parallel=3 --coverage --coverageReporters=lcov
       - run: npx nx affected --base=$NX_BASE --target=lint --parallel=2
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: coverage-cache-{{ .Branch }}
+          paths:
+            - coverage
       - run: node ./tools/coverageMerger.js
       - sonarcloud/scan
 
