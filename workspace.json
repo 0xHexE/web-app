@@ -3,6 +3,8 @@
   "projects": {
     "common-ui": "libs/common-ui",
     "document-repository-webapp": "apps/document-repository-webapp",
-    "document-repository-webapp-e2e": "apps/document-repository-webapp-e2e"
+    "document-repository-webapp-e2e": "apps/document-repository-webapp-e2e",
+    "workflow-webapp": "apps/workflow-webapp",
+    "workflow-webapp-e2e": "apps/workflow-webapp-e2e"
   }
 }
