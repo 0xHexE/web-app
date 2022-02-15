@@ -5,6 +5,16 @@ orbs:
   sonarcloud: sonarsource/sonarcloud@1.0.1
 
 jobs:
+  nxagent:
+    docker:
+      - image: cimg/node:17.5.0
+    steps:
+      - checkout
+      - run: npm install
+      - run:
+          command: npx nx-cloud start-agent
+          no_output_timeout: 60m
+
   main:
     docker:
       - image: cimg/node:17.5.0
@@ -88,11 +98,11 @@ jobs:
 workflows:
   build:
     jobs:
-      - agent:
+      - nxagent:
           name: 'agent1'
-      - agent:
+      - nxagent:
           name: 'agent2'
-      - agent:
+      - nxagent:
           name: 'agent3'
       - main:
           filters:
