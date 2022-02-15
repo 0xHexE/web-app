@@ -6,3 +6,4 @@ export * from './lib/Layout/Default';
 export * from './lib/Component/Sidebar/Context/SidebarConfig';
 export * from './lib/Atom/language';
 export * from './lib/Component/LanguageProvider';
+export * from './lib/Styled/FlexFiller';

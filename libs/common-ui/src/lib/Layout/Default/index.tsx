@@ -20,7 +20,12 @@ export function DefaultLayout({ children }: DefaultLayoutProps) {
       >
         <Sidebar />
 
-        <Block padding="scale400">{children}</Block>
+        <Block
+          padding="scale400"
+          overrides={{ Block: { style: { flexGrow: 1 } } }}
+        >
+          {children}
+        </Block>
       </Block>
     </Block>
   );
