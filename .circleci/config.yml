@@ -1,25 +1,41 @@
 version: 2.1
 
+aliases:
+  - &docker
+    - image: cimg/openjdk:17.0.0-node
+
+  - &environment
+    TZ: /usr/share/zoneinfo/America/Los_Angeles
+    NX_CLOUD_DISTRIBUTED_EXECUTION: 'true'
+
 orbs:
   nx: nrwl/nx@1.0.0
   sonarcloud: sonarsource/sonarcloud@1.0.1
 
 jobs:
   nxagent:
-    docker:
-      - image: cimg/node:17.5.0
+    docker: *docker
+    environment: *environment
     steps:
       - checkout
-      - run: npm install
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run: yarn install
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - .yarn/cache
+            - .yarn/unplugged
       - run:
           command: npx nx-cloud start-agent
           no_output_timeout: 60m
 
   main:
-    docker:
-      - image: cimg/node:17.5.0
-    environment:
-      NX_CLOUD_DISTRIBUTED_EXECUTION: 'true'
+    docker: *docker
+    environment: *environment
     steps:
       - checkout
       - restore_cache:
@@ -35,6 +51,7 @@ jobs:
           paths:
             - .yarn/cache
             - .yarn/unplugged
+
       # For restoring old cache of coverage
       - restore_cache:
           name: Restore Yarn Package Cache
@@ -56,10 +73,8 @@ jobs:
       - sonarcloud/scan
 
   pr:
-    docker:
-      - image: cimg/node:17.5.0
-    environment:
-      NX_CLOUD_DISTRIBUTED_EXECUTION: 'true'
+    docker: *docker
+    environment: *environment
     steps:
       - checkout
       - restore_cache:
