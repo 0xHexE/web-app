@@ -1,5 +1,5 @@
 import { useAtomValue } from 'jotai/utils';
-import { appLanguageAtom } from '@web-app/common-ui';
+import { appLanguageAtom } from '../../Atom/language';
 
 export interface LanguageProviderProps {
   children: (lang: string) => JSX.Element | null;
