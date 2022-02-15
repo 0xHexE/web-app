@@ -1,27 +1,16 @@
 import { render } from '@testing-library/react';
 
-import { BrowserRouter } from 'react-router-dom';
-
 import App from './app';
+import { BaseProviders } from '../components/BaseProviders';
 
 describe('App', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
-      <BrowserRouter>
+      <BaseProviders>
         <App />
-      </BrowserRouter>
+      </BaseProviders>
     );
 
     expect(baseElement).toBeTruthy();
-  });
-
-  it('should have a greeting as the title', () => {
-    const { getByText } = render(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    );
-
-    expect(getByText(/Welcome workflow-webapp/gi)).toBeTruthy();
   });
 });
